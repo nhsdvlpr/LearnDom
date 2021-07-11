@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="number">0</h1>
+    <button id="decrement">-</button>
+    <button id="increment">+</button>
+
+    <script>
+      const number = document.getElementById("number");
+      const increment = document.getElementById("increment");
+      let num = 0;
+
+      increment.addEventListener("click", function () {
+        number.innerHTML = num;
+        return num++;
+      });
+
+      decrement.addEventListener("click", function () {
+        number.innerHTML = num;
+        return num--;
+      });
+    </script>
+  </body>
+</html>
